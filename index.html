@@ -96,10 +96,13 @@
                         <div class="home__img">
                             <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
                                 <!-- Create a white circle as a background -->
-                                <circle cx="500" cy="500" r="500" fill="white" />
-                              
+                                <circle cx="150" cy="150" r="150" fill="white"></circle>
+                                
                                 <!-- Insert an image inside the circle -->
-                                <image x="10" y="10" width="300" height="300" xlink:href="assets/img/dsweetts.jpg" />
+                                <clipPath id="clipCircle">
+                                    <circle cx="150" cy="150" r="150"></circle>
+                                </clipPath>
+                                <image x="0" y="0" width="300" height="300" xlink:href="assets/img/dsweetts.jpg" clip-path="url(#clipCircle)"></image>
                             </svg>
                         </div>
 
