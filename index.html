@@ -20,13 +20,13 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         
 
-        <title>D' Sweet T's</title>
+        <title>Sweet Delights by Lyanna</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class=" nav container">
-                <a href="#" class="nav__logo">D' Sweet T's</a>
+                <a href="#" class="nav__logo">Sweet Delights by Lyanna</a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list grid"> 
@@ -94,18 +94,21 @@
                             </a>
                         </div>
                         <div class="home__img">
-                            <svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
-                                <!-- Create a white circle as a background -->
-                                <circle cx="500" cy="500" r="500" fill="white" />
-                              
-                                <!-- Insert an image inside the circle -->
-                                <image x="10" y="10" width="300" height="300" xlink:href="assets/img/dsweetts.jpg" />
-                            </svg>
+                            <svg width="320" height="320" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Define a clipping path -->
+                                <defs>
+                                  <clipPath id="rounded-border">
+                                    <rect x="10" y="10" width="300" height="300" rx="20" ry="20" />
+                                  </clipPath>
+                                </defs>
+                                <!-- Apply the clipping path to the image -->
+                                <image x="10" y="10" width="300" height="300" xlink:href="assets/img/sweetdelightsbylyanna.png" clip-path="url(#rounded-border)" />
+                              </svg>
                         </div>
 
                         <div class="home__data">
                             <h1 class="home__title">Hi, welcome to our website!</h1>
-                            <h3 class="home__subtitle">We customize cakes and cupcakes for special occasions! 💕</h3>
+                            <h3 class="home__subtitle">Bring your celebrations to life with our custom cakes, cupcakes, and cookies—made to match your style and sweeten every moment! 💕</h3>
                             <p class="home__description"></p>
                             <a href="#contact" class="button button--flex">
                                 Contact Us <i class="uil uil-message button__icon"></i>
@@ -132,47 +135,48 @@
                     <img src="assets/img/ube_pndsal_1.jpg" alt="" class="about__img">
 
                     <div class="about__data">
-                        <p class="about__description">At D' Sweet T's, we offer products than cakes. Since launching the first bakery in 2019, 
-                            D' Sweet T's,' individualized in-bakery experience, time-tested recipes, and comforting taste have enriched 
-                            festivities throughout Metro Manila.</p>
+                        <p class="about__description">At Sweet Delights by Lyanna, we offer more than just cakes. Since launching the first bakery in 2019, 
+                            Sweet Delights by Lyanna's individualized in-bakery experience, time-tested recipes, and comforting taste have enriched festivities 
+                            throughout Metro Manila. We also specialize in crafting delicious Ube Pandesal, 
+                            a crowd favorite that perfectly balances tradition and innovation.</p>
                     </div>
                 </div>
             </section>
 
             <!--==================== PRODUCTS ====================-->
             <section class="products section" id="products">
-                <h2 class="section__title">Products</h2>
+                <h2 class="section__title">Sample Products</h2>
                 <div class="container">
                 
                     <!-- Full-width images with number text -->
                     <div class="mySlides">
                       <div class="numbertext"></div>
-                        <img src="assets/img/ube_pndsal_1.jpg" style="width:100%; height:100%">
+                        <img src="assets/img/kuromi_cupcake.jpeg" style="width:100%; height:100%">
                     </div>
                 
                     <div class="mySlides">
                       <div class="numbertext"></div>
-                        <img src="assets/img/ube_pndsal_2.jpg" style="width:100%; height:100%">
+                        <img src="assets/img/bananacake_cookie.jpg" style="width:100%; height:100%">
                     </div>
                 
                     <div class="mySlides">
                       <div class="numbertext"></div>
-                        <img src="assets/img/product3.jpg" style="width:100%; height:100%">
+                        <img src="assets/img/jd_one.jpeg" style="width:100%; height:100%">
                     </div>
                 
                     <div class="mySlides">
                       <div class="numbertext"></div>
-                        <img src="assets/img/product4.jpg" style="width:100%; height:100%">
+                        <img src="assets/img/cupcake_cake.jpeg" style="width:100%; height:100%">
                     </div>
                 
                     <div class="mySlides">
                       <div class="numbertext"></div>
-                        <img src="assets/img/product5.jpg" style="width:100%; height:100%">
+                        <img src="assets/img/pink_butterfly.jpeg" style="width:100%; height:100%">
                       </div>
                 
                     <div class="mySlides">
                       <div class="numbertext"></div>
-                        <img src="assets/img/product6.jpg" style="width:100%; height:100%">
+                        <img src="assets/img/purple_cupcake.jpg" style="width:100%; height:100%">
                     </div>
                 
                     <!-- Next and previous buttons -->
@@ -182,22 +186,22 @@
                     <!-- Thumbnail images -->
                     <div class="row">
                       <div class="column">
-                        <img class="demo cursor" src="assets/img/ube_pndsal_1.jpg" style="width:100%; height:84px" onclick="currentSlide(1)">
+                        <img class="demo cursor" src="assets/img/kuromi_cupcake.jpeg" style="width:100%; height:84px" onclick="currentSlide(1)">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="assets/img/ube_pndsal_2.jpg" style="width:100%; height:84px" onclick="currentSlide(2)">
+                        <img class="demo cursor" src="assets/img/bananacake_cookie.jpg" style="width:100%; height:84px" onclick="currentSlide(2)">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="assets/img/product3.jpg" style="width:100%; height:84px" onclick="currentSlide(3)">
+                        <img class="demo cursor" src="assets/img/jd_one.jpeg" style="width:100%; height:84px" onclick="currentSlide(3)">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="assets/img/product4.jpg" style="width:100%; height:84px" onclick="currentSlide(4)">
+                        <img class="demo cursor" src="assets/img/cupcake_cake.jpeg" style="width:100%; height:84px" onclick="currentSlide(4)">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="assets/img/product5.jpg" style="width:100%; height:84px" onclick="currentSlide(5)">
+                        <img class="demo cursor" src="assets/img/pink_butterfly.jpeg" style="width:100%; height:84px" onclick="currentSlide(5)">
                       </div>
                       <div class="column">
-                        <img class="demo cursor" src="assets/img/product6.jpg" style="width:100%; height:84px" onclick="currentSlide(6)">
+                        <img class="demo cursor" src="assets/img/purple_cupcake.jpg" style="width:100%; height:84px" onclick="currentSlide(6)">
                       </div>
                     </div>
                 </div>
@@ -337,10 +341,10 @@
                     <div class="swiper-wrapper">
                         <!--==================== ORDERS 1 ====================-->
                         <div class="orders__content grid swiper-slide">
-                            <img src="assets/img/order1.jpg" alt="" class="order__img">
+                            <img src="assets/img/ironman.jpg" alt="" class="order__img">
                             <div class="orders__data">
-                                <h3 class="orders__title">Happy 5th month baby Theo ❤️❤️</h3>
-                                <p class="orders__description">Happy 5th Month, Little Star! 🌟 You're growing more beautiful each day. Your giggles light up our world. May this month be filled with endless wonder and joy! 💖👶🎉.</p>
+                                <h3 class="orders__title">Happy 7th birthday Jinnar Javan ❤️❤️</h3>
+                                <p class="orders__description">Happy 7th birthday, Little Boy! 🌟 You're growing more beautiful each day. Your giggles light up our world. May this year be filled with endless wonder and joy! 💖👶🎉.</p>
                             </div>
                         </div>
 
@@ -465,7 +469,7 @@
             <div class="footer__bg">
                 <div class="footer__container container grid">
                     <div>
-                        <h1 class="footer__title">D' Sweet T's</h1>
+                        <h1 class="footer__title">Sweet Delights by Lyanna</h1>
                         <span class="footer__subtitle">We customize cakes and cupcakes for special occasions! 💕</span>
                     </div>
 
